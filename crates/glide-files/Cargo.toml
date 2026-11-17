@@ -29,9 +29,9 @@ iced = { version = "0.14.0", default-features = false, features = [
     "web-colors",
     "advanced",
 ] }
-glide-config = { path = "../glide-config" }
-glide-sdk = { path = "../glide-sdk" }
-glide-app = { path = "../glide-app" }
+glide-config.workspace = true
+glide-sdk.workspace = true
+glide-app.workspace = true
 serde.workspace = true
 toml.workspace = true
 libc = "0.2"
@@ -43,5 +43,5 @@ wayland-client = "0.31"
 wayland-protocols = { version = "0.32", features = ["client", "unstable"] }
 
 [dev-dependencies]
-glide-theme = { path = "../glide-theme" }
+glide-theme.workspace = true
 wayland-server = "0.31"
